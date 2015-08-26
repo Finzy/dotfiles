@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cp ~/.bashrc ~/dotfiles/
+
+cp ~/.config/awesome -R ~/dotfiles/
+
+cp ~/.vimrc ~/dotfiles/
+
+git add -u
+
+git commit -m "dotfiles update"
+
+git push
